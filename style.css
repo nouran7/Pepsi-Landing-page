@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+.container{
+    margin:0 7rem;
+    height:100%;
+}
+#home{
+    height:100vh;
+    background: #0162be;
+    color:#fff;
+    }
+
+nav  .logo{
+    width:50px;
+}
+
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:50%;
+
+}
+
+nav ul a {
+    color:#fff;
+    
+}
+#home .content{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+#home .content img{
+    width:250px;
+    animation:animation1 2s ease-out;
+}
+h1{
+    font-weight:900;
+    font-size:40px;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+h1 span{
+    display:block;
+    font-weight:900;
+    font-size:70px;
+    text-transform:uppercase;
+}
+.content p{
+    font-weight:300px;
+    line-height:1.5;
+    margin-bottom:30px;
+    width:80%;
+}
+
+.btn{
+    font-size:14px;
+    text-decoration:none;
+    padding:10px 20px;
+    background:#fff;
+    color:black;
+    border-radius:30px;
+}
+
+.btn:hover{
+    color:white;
+    background-color:transparent;
+    border:1px solid #fff;
+}
+.icon i{
+   color: #fff !important;
+   font-size:20px;
+   margin:10px 0;
+   animation:animation2 2s ease-out;
+}
+
+
+
+.types {
+    width: 100px;
+    display: block;
+    margin: -30px auto 0 auto;
+}
+@keyframes animation1 {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes animation2 {
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        margin: 0 2rem;
+    }
+
+    nav ul {
+        width: auto;
+        gap: 15px;
+    }
+
+    #home .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content p {
+        width: 100%;
+    }
+
+    #home .content img {
+        width: 180px;
+    }
+}
